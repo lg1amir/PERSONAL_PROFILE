@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פרופיל אישי | תיק עבודות</title>
+  <meta name="description" content="אתר פרופיל אישי מודרני ורספונסיבי הכולל אודות, כישורים, קישורים חברתיים וטופס יצירת קשר.">
+  
+  <!-- Google Fonts: Heebo & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+  <!-- Navbar / Header Controls -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-accent">&lt;</span>DevProfile<span class="logo-accent">/&gt;</span>
+    </div>
+    <div class="nav-actions">
+      <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="החלף ערכת נושא">
+        <i class="fa-solid fa-sun icon-sun"></i>
+        <i class="fa-solid fa-moon icon-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Profile Section -->
+    <section class="profile-card" id="profile">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" 
+             alt="תמונת פרופיל" 
+             class="avatar-img"
+             id="avatarImage">
+        <div class="status-indicator" title="פנוי לפרויקטים חדשים"></div>
+      </div>
+      
+      <h1 class="profile-name">אלכס כהן</h1>
+      <p class="profile-title">Full Stack Developer & AI Enthusiast</p>
+      
+      <p class="profile-tagline">
+        מפתח תוכנה המתמחה בבניית ממשקי משתמש מודרניים, ארכיטקטורת צד-לקוח מתקדמת ואינטגרציות AI חדשניות.
+      </p>
+
+      <!-- Social Links -->
+      <div class="social-links" id="socialLinks">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="פרופיל GitHub">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="פרופיל LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:alex@example.com" class="social-btn email" aria-label="שליחת אימייל">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section-card" id="about">
+      <div class="section-header">
+        <i class="fa-solid fa-user-astronaut section-icon"></i>
+        <h2>אודות</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          שלום! אני מפתח תוכנה בעל תשוקה לטכנולוגיות Web מתקדמות, כתיבת קוד נקי ועיצוב חוויית משתמש (UX) אינטואיטיבית ומלהיבה.
+        </p>
+        <div class="expandable-text" id="moreAboutText">
+          <p>
+            אני אוהב לפתור בעיות מורכבות, לייעל ביצועים, ולחקור שילוב מודלים של בינה מלאכותית ישירות בסביבות Front-End. מתמקד תמיד בחדשנות, רספונסיביות מלאה, וארכיטקטורה יציבה ומודולרית.
+          </p>
+        </div>
+        <button id="readMoreBtn" class="btn-secondary">
+          <span class="btn-text">קרא עוד</span>
+          <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-card" id="skills">
+      <div class="section-header">
+        <i class="fa-solid fa-bolt-lightning section-icon"></i>
+        <h2>כישורים וטכנולוגיות</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon-wrap js-icon"><i class="fa-brands fa-js"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">JavaScript (ES6+)</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon-wrap html-icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">HTML5 & Semantic Web</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon-wrap css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">CSS3 & Responsive Design</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon-wrap python-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Python & Automation</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon-wrap react-icon"><i class="fa-brands fa-react"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">React & Web Architecture</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon-wrap git-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Git & CI/CD</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 89%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Contact Form Section -->
+    <section class="section-card" id="contact">
+      <div class="section-header">
+        <i class="fa-solid fa-paper-plane section-icon"></i>
+        <h2>יצירת קשר</h2>
+      </div>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nameInput">שם מלא</label>
+          <input type="text" id="nameInput" name="name" placeholder="ישראל ישראלי" required>
+          <span class="error-msg" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="emailInput">דואר אלקטרוני</label>
+          <input type="email" id="emailInput" name="email" placeholder="israel@example.com" required>
+          <span class="error-msg" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="messageInput">הודעה</label>
+          <textarea id="messageInput" name="message" rows="4" placeholder="ספר לי על הפרויקט שלך..." required></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+        <button type="submit" id="submitBtn" class="btn-primary">
+          <span>שלח הודעה</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+      </form>
+      
+      <!-- Interactive Notification Toast -->
+      <div id="toastNotification" class="toast hidden" role="alert" aria-live="polite">
+        <i class="fa-solid fa-circle-check"></i>
+        <div class="toast-text">
+          <strong>ההודעה נשלחה בהצלחה!</strong>
+          <span>תודה שפנית, אחזור אליך בהקדם.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 אלכס כהן. כל הזכויות שמורות.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
